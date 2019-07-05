@@ -1,0 +1,11 @@
+CREATE TABLE `custom`.`giftfavourite` (
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  `GiftId` VARCHAR(255) NULL,
+  `PreviewUrl` VARCHAR(255) NULL,
+  `Url` VARCHAR(255) NULL,
+  `IsFavourite` BIT NOT NULL DEFAULT 0,
+  `WidthPreview` VARCHAR(255) NULL,
+  `HeightPreview` VARCHAR(255) NULL,
+  `SizePreview` VARCHAR(255) NULL,
+  PRIMARY KEY (`Id`),
+  UNIQUE INDEX `GiftId_UNIQUE` (`GiftId` ASC));
